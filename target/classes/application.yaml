@@ -3,3 +3,9 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 100MB
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_xsxk
+    username: root
+    password: 789456
