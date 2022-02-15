@@ -9,16 +9,16 @@ import org.springframework.context.annotation.Configuration;
 import javax.servlet.ServletRegistration;
 import java.util.Arrays;
 //保证容器中的实例都是单例
-@Configuration(proxyBeanMethods = true)
+//@Configuration(proxyBeanMethods = true)
 public class MyServletConfig {
 
-    @Bean
+//    @Bean
     public ServletRegistrationBean servletRegistration(){
         MyServlet myServlet = new MyServlet();
         return new ServletRegistrationBean(myServlet,"/my","/");
     }
 
-    @Bean
+//    @Bean
     public FilterRegistrationBean filterRegistrationBean(){
         MyFilter myFilter = new MyFilter();
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(myFilter);
@@ -26,7 +26,7 @@ public class MyServletConfig {
         return filterRegistrationBean;
     }
 
-    @Bean
+//    @Bean
     public ServletListenerRegistrationBean servletListenerRegistrationBean(){
         MyListener myListener = new MyListener();
         return new ServletListenerRegistrationBean(myListener);

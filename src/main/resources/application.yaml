@@ -9,3 +9,8 @@ spring:
     url: jdbc:mysql://localhost:3306/db_xsxk
     username: root
     password: 789456
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

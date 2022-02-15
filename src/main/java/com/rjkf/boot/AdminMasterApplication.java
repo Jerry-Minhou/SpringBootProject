@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
-@ServletComponentScan(value = "com.rjkf.boot")
+//@ServletComponentScan(value = "com.rjkf.boot")
 @SpringBootApplication
 public class AdminMasterApplication {
 

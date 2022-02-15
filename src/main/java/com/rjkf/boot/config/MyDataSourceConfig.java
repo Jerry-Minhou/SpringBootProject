@@ -10,12 +10,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 
-@Configuration
-@Slf4j
+//@Configuration
+//@Slf4j
+@Deprecated
 public class MyDataSourceConfig {
 
-    @Bean
-    @ConfigurationProperties("spring.datasource")
+//    @Bean
+//    @ConfigurationProperties("spring.datasource")
     public DataSource dataSource(){
         DruidDataSource druidDataSource = new DruidDataSource();
         return druidDataSource;
